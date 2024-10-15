@@ -9,6 +9,8 @@ components = ["AMD Radeon RX 7900XTX", "Nvidia RTX 4060"]
         # print(f"Processing component: {component}")
 
 # /Heikki Työskentelyalue
+
+# /Kauri työskentelyalue
 @task
 def minimal_task():
     message = "Hello"
