@@ -11,9 +11,10 @@ components = ["AMD Radeon RX 7900XTX", "Nvidia RTX 4060"]
 # /Heikki Työskentelyalue
 
 # /Kauri työskentelyalue
+
+# /Jasper Työskentelyalue
 @task
 def minimal_task():
     message = "Hello"
     message = message + " World!"
 
-# /Jasper Työskentelyalue
