@@ -15,3 +15,5 @@ components = ["AMD Radeon RX 7900XTX", "Nvidia RTX 4060"]
 def minimal_task():
     message = "Hello"
     message = message + " World!"
+
+# /Jasper Työskentelyalue
