@@ -15,18 +15,20 @@ def read_components():
 
         for row in range(2, total_rows +1):
             component = excel.get_cell_value( column=1, row=row)
-            price = excel.get_cell_value(column=2, row=row)
+            price1 = excel.get_cell_value(column=2, row=row)
+            price2 = excel.get_cell_value(column=3, row=row)
 
             if not component:
                 break
 
-            if not price:
+            if not price1 or price2 :
                 components.append(component)
     finally:
         excel.close_workbook()
 
     return components
 
+components = read_components()
 
 
 
@@ -182,7 +184,7 @@ finally:
 
 
 
-components = read_components()
+
 @task
 def minimal_task():
     message = "Hello"
