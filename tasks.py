@@ -21,7 +21,7 @@ def read_components():
             if not component:
                 break
 
-            if not price1 or price2 :
+            if not price1 or not price2 :
                 components.append(component)
     finally:
         excel.close_workbook()
