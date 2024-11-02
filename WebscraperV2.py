@@ -140,7 +140,7 @@ def Tuotelista():
     print(df)
 
     # Tallenna tulokset CSV-tiedostoon
-    with open('product_codes2.csv', mode='w', newline='') as file:
+    with open('product_codes.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(["Product Code"])
         for code in product_codes:
