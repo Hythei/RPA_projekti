@@ -6,8 +6,9 @@ channels:
   - conda-forge
 
 dependencies:
-  - python=3.10.12                # https://pyreadiness.org/3.10
   - pip=23.2.1                    # https://pip.pypa.io/en/stable/news
+  - python=3.10.12                # https://pyreadiness.org/3.10
+  - selenium==4.15.2      
   - robocorp-truststore=0.8.0     # https://pypi.org/project/robocorp-truststore/
   - pip:
     - rpaframework==28.6.3        # https://rpaframework.org/releasenotes.html
@@ -16,5 +17,4 @@ dependencies:
     - pandas==2.2.3
     - numpy==2.1.2
     - chromedriver-autoinstaller==0.6.4
-    - selenium==4.15.2                    #==4.25.0
     - bs4==0.0.2                  # "from bs4 import BeautifulSoup" on html parselointi.
