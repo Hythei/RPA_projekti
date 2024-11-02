@@ -26,25 +26,25 @@ import csv
 import pandas as pd
 import numpy as np
 
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
+#from selenium import webdriver
+#from selenium.webdriver.chrome.service import Service as ChromeService
+#from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 # Set up the WebDriver
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+#driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
 
 
 import csv
-#import chromedriver_autoinstaller
-#from selenium import webdriver
+import chromedriver_autoinstaller
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
 
 # Automaattinen ChromeDriverin haku ja asennus
-#chromedriver_autoinstaller.install()
+chromedriver_autoinstaller.install()
 
 # Luo selaininstanssi
 driver = webdriver.Chrome()
