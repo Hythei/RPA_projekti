@@ -19,7 +19,7 @@ Product Name    Product Number      Proshop Price   Verkkokauppa Price      Halv
 Kun tuotteet on listattu excelissä se tekee lopuksi hintavertailu, jonka se kertoo kummassa kaupassa on halvempi hinta.
 
 """
-
+from robocorp.tasks import task
 import requests
 from bs4 import BeautifulSoup
 import csv
@@ -281,7 +281,7 @@ def Tuote_hinnat():
     driver.quit()
     return df
 
-
+@task
 def main_scrape():
 
     Tuotelista()
