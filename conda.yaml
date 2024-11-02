@@ -15,3 +15,6 @@ dependencies:
     - robocorp-browser==2.3.4     # https://pypi.org/project/robocorp-browser
     - pandas==2.2.3
     - numpy==2.1.2
+    - chromedriver-autoinstaller==0.6.4
+    - selenium==4.25.0
+    - bs4==0.0.2                  # "from bs4 import BeautifulSoup" on html parselointi.
