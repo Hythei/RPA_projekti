@@ -14,7 +14,7 @@ environmentConfigs:
 artifactsDir: output
 
 PATH:
-  - .
+  - /usr/bin/chromium
 PYTHONPATH:
   - .
 ignoreFiles:
