@@ -19,6 +19,7 @@ Product Name    Product Number      Proshop Price   Verkkokauppa Price      Halv
 Kun tuotteet on listattu excelissä se tekee lopuksi hintavertailu, jonka se kertoo kummassa kaupassa on halvempi hinta.
 
 """
+from RPA.Browser.Selenium import Selenium
 from robocorp.tasks import task
 import requests
 from bs4 import BeautifulSoup
@@ -51,6 +52,13 @@ driver = webdriver.Chrome()
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+
+browser = Selenium()
+browser.open_chrome_browser(
+    executable_path="/usr/bin/chromium",
+    options=["--headless", "--no-sandbox", "--disable-dev-shm-usage"]
+)
 
 def lue_excel():
 
